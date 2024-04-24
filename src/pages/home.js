@@ -7,6 +7,7 @@ import 'swiper/css/navigation';
 // import required modules
 import { Navigation } from 'swiper/modules';
 import axios from 'axios';
+import navHook from "./nav";
 
 class HomePage extends React.Component{
     
@@ -41,6 +42,11 @@ class HomePage extends React.Component{
             this.setState({ product : res.data.product});
         })
         .catch((err => console.log(err)));
+    }
+
+    showCart = (ss) => {
+        console.log(ss);
+        this.props.navigate(`/cart?restId=${ss}`);
     }
 
     render(){
@@ -90,7 +96,7 @@ class HomePage extends React.Component{
                             return<>
                             
                             <SwiperSlide>
-                            <div  className="cardsPart">
+                            <div  className="cardsPart" onClick={() => this.showCart(data.restraunt_id)}>
                                 <div class="card" style={{backgroundImage:`url(${data.img})`}}>
                                         <p class="offer-text">{data.offer}</p>
                                         <div class="card-image card-img-top" ></div>
@@ -141,7 +147,7 @@ class HomePage extends React.Component{
                             return<>
                             
                             <SwiperSlide>
-                            <div  className="cardsPart">
+                            <div  className="cardsPart" onClick={() => this.showCart(data.restraunt_id)}>
                                 <div class="card" style={{backgroundImage:`url(${data.img})`}}>
                                         <p class="offer-text">{data.offer}</p>
                                         <div class="card-image card-img-top" ></div>
@@ -173,7 +179,7 @@ class HomePage extends React.Component{
                             return<>
                             
                             <SwiperSlide>
-                            <div  className="cardsPart">
+                            <div  className="cardsPart" onClick={() => this.showCart(data.restraunt_id)}>
                                 <div class="card" style={{backgroundImage:`url(${data.img})`}}>
                                         <p class="offer-text">{data.offer}</p>
                                         <div class="card-image card-img-top" ></div>
@@ -205,7 +211,7 @@ class HomePage extends React.Component{
                             return<>
                             
                             <SwiperSlide>
-                            <div  className="cardsPart">
+                            <div  className="cardsPart" onClick={() => this.showCart(data.restraunt_id)}>
                                 <div class="card" style={{backgroundImage:`url(${data.img})`}}>
                                         <p class="offer-text">{data.offer}</p>
                                         <div class="card-image card-img-top" ></div>
@@ -430,4 +436,4 @@ class HomePage extends React.Component{
     }
 }
 
-export default HomePage;
+export default navHook(HomePage);

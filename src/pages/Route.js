@@ -3,6 +3,7 @@ import App from '../App';
 import Home from '../pages/home';
 import Header from "./header";
 import Search from "./search";
+import CartPage from "./cartPage";
 
 const Router = () =>{
 return(
@@ -11,6 +12,7 @@ return(
       <Routes>
           <Route path="" element={<Home />} />
           <Route path="/search" element={<Search />} />
+          <Route path="/cart" element={<CartPage />} />
           
       </Routes>
     </BrowserRouter>

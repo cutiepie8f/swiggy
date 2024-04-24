@@ -81,7 +81,7 @@ class Search extends React.Component{
         return(
             suggestion.map((item, index) => (
                 <li key={index} className="suggList">
-                    <img src={ item.img } className="suggImg" width={"40px"} />         
+                    <img src={ item.img } className="suggImg" width={"60px"} height={"60px"} />         
                     <span className="suggName">{item.shop_name}</span>   
                 </li>
             ))

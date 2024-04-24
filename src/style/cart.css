@@ -1,0 +1,110 @@
+.restraunt-name{
+    position: relative;
+    /* margin: 10rem 0 0 0; */
+    font-weight: 800;
+    font-size: 35px;
+    font-family: sans-serif;
+}
+.recommend{
+    position: relative;
+    /* margin: 17rem 0 0 0; */
+    font-weight: 700;
+    font-size: 22px;
+    padding-bottom: 34px;
+}
+.ruler{
+    /* margin: -134px 0 0 0; */
+    position: static;
+    width: 50rem;
+    border: 6px solid darkgray;
+}
+#sign-innerpart{
+    width: 8px;
+    height: 8px;
+    background: #048002 0% 0% no-repeat padding-box;
+    border: 1px solid #048002;
+    border-radius: 4px;
+    }
+    #sign-outerpart{
+        width: 14px;
+    height: 14px;
+    border: 1px solid #048002;
+    background-color: white;
+    padding: 2px;
+    /* margin-bottom: 6px;
+    margin: 21rem 0 0 0; */
+    position: absolute;
+    
+    }
+    
+    .item_quantity_button {
+    position: absolute;
+    background-color: #fff;
+    text-align: center;
+    width: 105px;
+    margin: 130px 40px 0 38px;
+    border-radius: 9px;
+    font-size: 22px;
+    font-weight: 700;
+    color: rgb(27, 166, 114);
+    border: 1px ridge;
+    box-shadow: 0px 0px 1px;
+    cursor: pointer;
+    }
+    
+    .qty {
+        background-color: #fff;
+        margin: 0 6px 0 6px;
+    }
+    
+    .total {
+        display: inline-block;
+        margin: 15px 0px 0px 17px;
+    }
+    
+    .menu{
+        margin-top: 28px;
+        position: absolute;
+        /* font-size: 20px; */
+        font-family: system-ui;;
+    }
+    .menuSection{
+        margin-top: 137px;
+        margin-left: 21rem;
+        margin-right: 21rem;
+        position: absolute;
+    }
+    .menuBox{
+        position: relative;
+        padding-bottom: 90px;
+    }
+    .menu-heading{
+    font-family: system-ui;;
+    font-weight: 700;
+    font-size: 22px;
+    }
+    .menu-price{
+    font-size: 20px;
+    font-weight: 700;
+    }
+   .menu-detail{
+    color: rgba(2, 6, 12, 0.6);
+    font-size: 17px;
+    font-weight: 600;
+    width: 532px;
+   }
+   .menu-image{
+    border-radius: 16px;
+    margin: 0 0 0 39rem;
+    width: 180px;
+    height: 150px;
+    background-size: cover;
+    background-repeat: no-repeat;
+   }
+   
+   .cart-button{
+     color: rgb(27, 166, 114);;
+     background-color: white;
+     border: none;
+     font-weight: 700;
+   }
